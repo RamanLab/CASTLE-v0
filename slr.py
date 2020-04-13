@@ -137,7 +137,11 @@ table.minimalistBlack  td {{
               <div>
                 <div>
                <center> 
+<<<<<<< HEAD
+               <font size="8" color="marooon"><b><center><i>{}</i></center></b></font>
+=======
                <font size="8" color="marooon"><b><center>{}</center></b></font>
+>>>>>>> 1beb3318c3929257c03cf1fa748ffde9ef9ae96d
                 <font size="4" color="darkblue"><b><center>SINGLE LETHAL REACTIONS</center></b></font><br>
                 <table border=1 align="center">{}</table>
                 </center>
@@ -151,7 +155,11 @@ table.minimalistBlack  td {{
              <p><p align="center"> Copyright &copy; CASTLE <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a></p></p>
            </div>
           </div> <!-- END .site-section -->"""
+<<<<<<< HEAD
+    newmsg = message.format(line[11],table_code)
+=======
     newmsg = message.format(line[0],table_code)
+>>>>>>> 1beb3318c3929257c03cf1fa748ffde9ef9ae96d
   
 #print(message)
     f.write(newmsg)
