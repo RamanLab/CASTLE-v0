@@ -6,17 +6,6 @@ file_name = "master.csv"
 f1 = open(file_name)
 csv_file = csv.reader(f1)
 
-<<<<<<< HEAD
-organism = [] #empty list to store second column values
-link= []
-lid= []
-org=[]
-for line in csv_file:
-    organism.append(line[0])
-    link.append(line[8])
-    lid.append(line[10])
-    org.append(line[11])
-=======
 org = [] #empty list to store second column values
 link= []
 lid= []
@@ -24,7 +13,6 @@ for line in csv_file:
     org.append(line[0])
     link.append(line[8])
     lid.append(line[10])
->>>>>>> 1beb3318c3929257c03cf1fa748ffde9ef9ae96d
     file_name1 = "CSV/"+line[0]+"/DGD.csv" 
     f2 = open(file_name1)
     csv_file1 = csv.reader(f2)
@@ -148,11 +136,7 @@ table.minimalistBlack  td {{
               <div>
                 <div>
                <center> 
-<<<<<<< HEAD
-               <font size="8" color="marooon"><b><center><i>{}</i></center></b></font>
-=======
                <font size="8" color="marooon"><b><center>{}</center></b></font>
->>>>>>> 1beb3318c3929257c03cf1fa748ffde9ef9ae96d
                 <font size="4" color="darkblue"><b><center>DOUBLE LETHAL GENES</center></b></font><br>
                 <table border=1 align="center">{}</table>
                 </center>
@@ -166,11 +150,7 @@ table.minimalistBlack  td {{
              <p><p align="center"> Copyright &copy; CASTLE <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a></p></p>
            </div>
           </div> <!-- END .site-section -->"""
-<<<<<<< HEAD
-    newmsg = message.format(line[11],table_code)
-=======
     newmsg = message.format(line[0],table_code)
->>>>>>> 1beb3318c3929257c03cf1fa748ffde9ef9ae96d
   
 #print(message)
     f.write(newmsg)

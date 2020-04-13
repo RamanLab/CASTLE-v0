@@ -6,11 +6,7 @@ file_name = "master.csv"
 f1 = open(file_name)
 csv_file = csv.reader(f1)
 
-<<<<<<< HEAD
-organism = [] #empty list to store second column values
-=======
 org = [] #empty list to store second column values
->>>>>>> 1beb3318c3929257c03cf1fa748ffde9ef9ae96d
 jsl=[]
 jdl=[]
 jtl=[]
@@ -20,15 +16,9 @@ tgd=[]
 gr=[]
 link=[]
 hp=[]
-<<<<<<< HEAD
-org=[]
-for line in csv_file:
-    organism.append(line[0])
-=======
 
 for line in csv_file:
     org.append(line[0])
->>>>>>> 1beb3318c3929257c03cf1fa748ffde9ef9ae96d
     jsl.append(line[1])
     jdl.append(line[2])
     jtl.append(line[3])
@@ -38,11 +28,7 @@ for line in csv_file:
     gr.append(line[7])
     link.append(line[8])
     hp.append(line[9])
-<<<<<<< HEAD
-    org.append(line[11])
-=======
     
->>>>>>> 1beb3318c3929257c03cf1fa748ffde9ef9ae96d
 
 #a = "../assets/img/s.jpg"
 
@@ -153,11 +139,7 @@ table.minimalistBlack  td {{
               <div>
                 <div>
                 <br>
-<<<<<<< HEAD
-                <font size="10" color="marooon"><b><center><i>{org:}</i></center></b></font>
-=======
                 <font size="10" color="marooon"><b><center>{organism:}</center></b></font>
->>>>>>> 1beb3318c3929257c03cf1fa748ffde9ef9ae96d
                 </div>
             </div>
                 <font size=5><br>Growth Rate: {gr:}
@@ -228,11 +210,7 @@ table.minimalistBlack  td {{
 
     
     """    
-<<<<<<< HEAD
-    newmsg = message.format(org=line[11],organism = line[0],gr = line[7],hp = line[9],link = line[8])
-=======
     newmsg = message.format(organism = line[0],gr = line[7],hp = line[9],link = line[8])
->>>>>>> 1beb3318c3929257c03cf1fa748ffde9ef9ae96d
     f.write(newmsg)
     f.close()
 f1.close()
